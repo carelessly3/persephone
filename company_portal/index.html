@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Hades Centre</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Hades Centre</h1>
+            <ul>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#catalogue">Catalogue</a></li>
+                <li><a href="#" id="logout">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Products Section -->
+        <section id="products">
+            <h2>Product Management</h2>
+            <div class="actions">
+                <button id="add-product">Add Product</button>
+                <button id="bulk-upload">Bulk Upload</button>
+                <button id="download-products">Download Products</button>
+            </div>
+            <div id="product-list" class="product-list">
+                <!-- Products will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <!-- Profile Section -->
+        <section id="profile">
+            <h2>Company Profile</h2>
+            <div id="profile-details">
+                <!-- Profile details will be dynamically inserted here -->
+            </div>
+            <button id="edit-profile">Edit Profile</button>
+        </section>
+
+        <!-- Catalogue Section -->
+        <section id="catalogue">
+            <h2>Catalogue Management</h2>
+            <div class="actions">
+                <button id="create-catalogue">Create Catalogue</button>
+            </div>
+            <div id="catalogue-list" class="catalogue-list">
+                <!-- Catalogues will be dynamically inserted here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Hades. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
